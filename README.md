@@ -62,3 +62,24 @@ Color Picker https://marketplace.visualstudio.com/items?itemName=anseki.vscode-c
 
     Arigmeticos: Toman valores Numericos (ya sean literales o variables) como sus operandos y retornan un valor numerico unico.
     Asignacion: Asigan un valor operando de la izquierda basado en el valor del operando de la derecha.
+
+# Concatenacion
+
+    ¿Que es la Concatenacion?
+    Es unir String's, para concatenar unis dos cadenas de texto.
+    Para Concatenar numeros le sumas un string, pq cuando el strign detecta una cadena de texto convierte todo en una cadena de texto.
+    Tambien existe la funcion Concat() y para poder usarlo si o si necesitamos una cadena de texto para aplicar la funcion.
+    Otra manera de concatenar con backtiks y la variable entre ${}.
+
+# Operadores Intermedio
+
+    Operadores de Comparacion comparan dos expresiones y devuelven un valor Boolean (true o false) que representa la relacion de sus valores.
+    Operadores Logicos se basan en true y false para devolver algo, nos devuelven un resultado a apartir de que se cumpla (o no) una condicion, su resultado es booleano y sus operandos son valores logicos o asimilables a ellos.  
+
+# Camel Case 
+
+    La primera letra de la primera palabra que escribamos, va en minuscula.
+
+# Condicionales 
+
+    Los condicionales son estructuras de control que permiten tomar decisiones lógicas en el código. Evalúan una condición (si es verdadera o falsa) y ejecutan diferentes bloques de código según el resultado, permitiendo que tu programa sea dinámico e interactivo.
