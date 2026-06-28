@@ -10,6 +10,13 @@
 
 # Bucles e Iteracion
 
-    a
+    Definicion
+    WHILE:
+    DO WHILE:
+    BREAK:
+    FOR: Declaramos, inicializamos, iteramos.
+    CONTINUE:
+    FOR IN:
+    FOR OF:
 
 #
