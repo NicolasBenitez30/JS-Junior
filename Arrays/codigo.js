@@ -63,7 +63,73 @@ let animales = [" Elefante", " Mono", " Gato", " Gallina", " Perro"];
 for (animal in animales) {
     document.write(animal + "<br>");
 }
+document.write("<br>");
 //      FOR OF:
 for (animal of animales) {
     document.write(animal + "<br>");
 }
+
+//      LABEL:
+array1 = ["maria", "josefina", "roberta"];
+array2 = ["pedro", "marcelo", array1, "marta"];
+
+forBella:
+for (let array in array2) {
+    if (array == 2) {
+        for (let array of array1)
+        {
+         document.write(array + "<br>");
+         continue forBella;   
+        }
+    }    
+    else {
+        document.write(array2[array] + "<br>");
+    }
+}
+
+//      ------ FUNCIONES ------
+//      DECLARANDO FUNCION
+function saludar(){
+    respuesta = prompt("¡Hola Nicolas! ¿Como fue tu dia?");
+    if (respuesta == "bien") {
+        alert("me alegro");
+    }
+    else {
+        alert("una pena");
+    }
+}
+//      LLAMANDO FUNCION
+saludar();
+
+//      RETURN:
+
+function despedir(){
+    alert("chau");
+    return "La funcion se ejecuto correctamente.";
+}
+
+let despido = despedir();
+
+document.write(despido);
+
+//      PARAMETROS:
+// Primera manera de hacer una funcion.
+function suma(nombre, num1, num2){
+    let res = num1 + num2;
+    document.write(`¡Hola ${nombre}! Tu Resultado es el siguiente:`+ res + "<br>" );
+}
+suma("Nicolas",9,12); 
+
+// Segunda manera de hacer una funcion.
+const resta = function(nombre, num1, num2){
+    let res = num1 - num2;
+    document.write(`¡Hola ${nombre}! Tu Resultado es el siguiente:`+ res + "<br>" );
+}
+resta("ENZO",19,86);
+
+// Tercera manera de hacer una funcion. Si hay un para metro va sin (), si no hay parametro va solo con (). Y si solo es una linea de codigo puede quedar asi "const multiplicar = nombre => document.write(`¡Hola ${nombre}! + "<br>");" para simplificarlo aun mas, esto se returna solo, no hace falta agregarlo.
+const multiplicar = (nombre, num1, num2)=>{
+    let res = num1*num2;
+    document.write(`¡Hola ${nombre}! Tu Resultado es el siguiente:`+ res + "<br>" );
+}
+multiplicar("Marcelo",19,93);
