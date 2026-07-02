@@ -20,12 +20,12 @@ const validarCliente = (time)=>{
 
 validarCliente(23);
 validarCliente(22);
-validarCliente(00);
+validarCliente(0);
 validarCliente(24);
-validarCliente(01);
-validarCliente(02);
-validarCliente(03);
-validarCliente(04);
+validarCliente(1);
+validarCliente(2);
+validarCliente(3);
+validarCliente(4);
 
 //      ------ SEGUNDO PROBLEMA ------
 
@@ -108,5 +108,5 @@ else if (operacion == 4) {
     alert(`Tu resultado es: ${resultado2}`);
 }
 else {
-    alert("NO SE HA ENCONTRADO LA OPERACION.")
+    alert("NO SE HA ENCONTRADO LA OPERACION.");
 }
