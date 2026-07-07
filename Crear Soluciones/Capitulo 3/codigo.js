@@ -83,7 +83,7 @@ document.write(`
 
 
 
-//      PROBLEMA 3:
+//      PROBLEMA 3: APP
 class App {
     constructor(descargas, puntuacion, peso){
         this.descargas = descargas;
