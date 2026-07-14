@@ -124,3 +124,71 @@ document.write(cantidadDeClases("pedro"));
 
 
 //      PROBLEMA 3: INSCRIPCION
+let asignaturas = {
+    fisica: ["Perez","pedro", "pepito", "cofla", "maria"],
+    programacion: ["Dalto","pedro", "juan", "pepito"],        
+    logica: ["Benitez","pedro", "juan", "pepito", "cofla", "maria"],
+    quimica: ["Rodriguez","pedro", "juan", "pepito", "cofla", "maria"]
+}
+
+const inscribir = (estudiante,asignatura)=>{
+    personas = asignaturas[asignatura];
+    if (personas.length >= 21)  {
+        document.write(`Lo siento <b>${estudiante}</b>, las clases de <b>${asignatura}</b> ya estan llenas.<br><br>`);
+    } else {
+        personas.push(estudiante);
+        if(asignatura == "fisica"){
+            asignaturas = {
+                fisica: personas,
+                programacion: asignaturas['programacion'],        
+                logica: asignaturas['logica'],
+                quimica: asignaturas['quimica']
+            }
+        } else if (asignatura == "programacion"){
+            asignaturas = {
+                fisica: asignaturas['fisica'],
+                programacion: personas,        
+                logica: asignaturas['logica'],
+                quimica: asignaturas['quimica']
+            }
+        } else if (asignatura == "logica"){
+            asignaturas = {
+                fisica: asignaturas['fisica'],
+                programacion: asignaturas['programacion'],        
+                logica: personas,
+                quimica: asignaturas['quimica']
+            }
+        } else if (asignatura == "quimica"){
+            asignaturas = {
+                fisica: asignaturas['fisica'],
+                programacion: asignaturas['programacion'],        
+                logica: asignaturas['logica'],
+                quimica: personas
+            }
+        }
+        document.write(`!Felicidades <b>${estudiante}</b>! Te has sido inscripto a la clase <b>${asignatura}</b>.<br><br>`);
+    }
+}
+
+document.write(asignaturas['fisica'] + "<br><br>");
+
+inscribir("nicolas","fisica");
+inscribir("lucas","fisica");
+inscribir("fernando","fisica");
+inscribir("ruben","fisica");
+inscribir("gabriel","fisica");
+inscribir("ignacio","fisica");
+inscribir("elvis","fisica");
+inscribir("luis","fisica");
+inscribir("arturo","fisica");
+inscribir("euge","fisica");
+inscribir("angel","fisica");
+inscribir("bruce","fisica");
+inscribir("damian","fisica");
+inscribir("marcos","fisica");
+inscribir("tony","fisica");
+inscribir("santiago","fisica");
+inscribir("martin","fisica");
+inscribir("reymond","fisica");
+
+document.write(asignaturas['fisica']);
