@@ -8,3 +8,8 @@ let clase = document.querySelector(".francia"); // Por Clase, para ver un ID se 
 document.write(clase);
 let todos = document.querySelectorAll(".argentina"); // Selecciona todos los elementos que contengan la clase.
 document.write(todos[3]);
+
+//      --- Definir, Obtener y Eliminar ---
+const rangoEtario = document.querySelector(".rangoEtario");
+
+rangoEtario.setAttribute("type", "text");
