@@ -59,3 +59,35 @@ Es una particularidad de las clases de los objetos
 
 - innerHTML: Devuelve el contenido HTML de un elemento.
 - outerHTML: Devuelve el codigo HTML completo del elemento.
+
+## Creación de Elementos
+- createElements():
+- createTextNode():
+- appendChild():
+- createDocumentFragment():
+
+## Obtencion y Modificacion de Childs
+- firstChild:
+- lastChild:
+- FirstElementChild:
+- lastElementChild:
+- childNodes:
+- children:
+
+## Metodos de Childs (Hijos)
+- replaceChild():
+- removeChild():
+- hasChildNodes():
+
+## Propiedades de parents (Padres)
+- perentElement:
+- parentNode:
+
+## Propiedades de Sibilings (Hermanos)
+- nextSibiling:
+- previusSibiling:
+- nextElementSibilin:
+- previusElementSibiling:
+
+## Nodos - Extras
+- closest():
