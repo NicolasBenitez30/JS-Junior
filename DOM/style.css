@@ -1,0 +1,28 @@
+body {
+    color: #222;
+    font-family: sans-serif;
+}
+
+.document-style{
+    background-color: darkorchid;
+}
+
+.doe-style{
+    background-color: darkorange;
+}
+
+.global-style{
+    background-color: gold;
+}
+
+.input-style{
+    background-color: indianred;
+}
+
+.grande {
+    font-size: 50px;
+}
+
+.rm {
+    background-color: red;
+}

@@ -19,3 +19,43 @@ Un Nodo en el DOM es cualquier etiqueta del cuerpo, como un parrafo, el mismo bo
 - setAttribute(): Modifica el valor de un atributo.
 - getAttribute(): Obtiene el valor de un atributo.
 - removeAttribute(): Remueve el valor de un atributo.
+
+## Atributos globales
+- class: Lista de clases del elemento separadas por espacios.
+- contenteditable: Indica si el elemento puede ser modificable por el usuario (bool).
+- dir: Indica la direccionalidad del texto.
+- hidden: Indica si el elemento aun no es, o ya no es, relevante.
+- id: define un identificador unico.
+- style: Contiene declaraciones de estilo CSS para ser aplicadas al elemento.
+- tabindex: Indica si el elemento puede obtener un focus de input.
+- title: Contiene un texto con informacion relacionada al elemento al que pertenece.
+
+##  Atributos de Imputs
+- className:
+- value:
+- type:
+- accept:
+- form:
+- minLenght:
+- placeholder:
+- required:
+
+## Atributo Style
+Nos permite modificar algo de CSS del atributo
+
+## Classlist, Metodos de Classlit
+Es una particularidad de las clases de los objetos
+- add(): Añade una clase.
+- remove(): Remueve una clase.
+- item(): Devuelve la clase del indice especificado.
+- contains(): Verifica si ese elemento posee o no, la clase especificada.
+- replace(): reemplaza una clase por otra.
+- toggle(): Si no tiene la clase especificada, la agrega, si ya le tiene, la elimina.
+
+## Obtencion y Modificacion de Elementos
+- textContent: Devuelve el texto de cualquier nodo.
+- innerText: Devuelve el texto visible de un node element.
+- outerText: Devuelve el texto de las etiquetas html incluidas las etiquetas. __Ya no se utiliza__
+
+- innerHTML: Devuelve el contenido HTML de un elemento.
+- outerHTML: Devuelve el codigo HTML completo del elemento.
